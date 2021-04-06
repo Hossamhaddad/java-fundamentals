@@ -3,7 +3,7 @@
  */
 package basiclibrary;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class Library {
     public boolean someLibraryMethod() {
@@ -63,4 +63,40 @@ public class Library {
         }
         return array[index];
     }
+    public static String  analyzingWeather(int[][] data){
+        int minTem=0;
+        int maxTem=0;
+        Set<Integer> weatherData=new HashSet<>();
+        for (int i=0;i<data.length;i++){
+            for (int j=0;j<data[i].length;j++){
+                weatherData.add(data[i][j]); }
+        }
+       for (Integer i:weatherData){
+           if(maxTem<i){
+             maxTem=i; }
+           if(minTem>i){
+            minTem=i; }
+       }
+      Set <String> unseenTemp=new HashSet<>();
+      for (int k=51;k<72;k++) {
+        if(!weatherData.contains(k)){
+            unseenTemp.add(String.valueOf(k));
+        }
+      }
+      return "hi";
+    }
+public static String tally(List<String> data){
+    HashMap<String, Integer> votes= new HashMap<String, Integer>();
+    for(String item :data){
+        if(votes.containsKey(item)){
+            votes.put(item, votes.get(item)+1);
+            System.out.println(item);
+        }
+        else{
+            votes.put(item,1);
+        }
+    }
+    System.out.println(votes);
+    return "hi";
+}
 }
