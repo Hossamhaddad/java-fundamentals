@@ -42,7 +42,7 @@ public class Library {
             counter+=array[i];
         }
         System.out.println(counter/array.length);
-        return counter;
+        return counter/array.length;
     }
     public static int[] lowestAverage(int[][] array) {
         double [] avgArr=new double[array.length];
@@ -63,7 +63,7 @@ public class Library {
         }
         return array[index];
     }
-    public static String  analyzingWeather(int[][] data){
+    public static Set<String>  analyzingWeather(int[][] data){
         int minTem=0;
         int maxTem=0;
         Set<Integer> weatherData=new HashSet<>();
@@ -83,9 +83,9 @@ public class Library {
             unseenTemp.add(String.valueOf(k));
         }
       }
-      return "hi";
+      return unseenTemp;
     }
-public static String tally(List<String> data){
+public static HashMap<String, Integer> tally(List<String> data){
     HashMap<String, Integer> votes= new HashMap<String, Integer>();
     for(String item :data){
         if(votes.containsKey(item)){
@@ -97,6 +97,6 @@ public static String tally(List<String> data){
         }
     }
     System.out.println(votes);
-    return "hi";
+    return votes;
 }
 }
