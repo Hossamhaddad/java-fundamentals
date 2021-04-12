@@ -5,9 +5,8 @@ import static org.junit.Assert.*;
 
 public class RestaurantTest {
 @Test public void testRestaurant(){
-    Restaurant hashem=new Restaurant("hashem",5,"$$$");
-    hashem.tostring();
-    hashem.addReview();
-    System.out.println(hashem.stars);
+    Restaurant hashem=new Restaurant("hashem",6,"$$$");
+    hashem.addReview("husam","gd rest",2);
+
 }
 }
