@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="inheritance.RestaurantTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-12T15:05:19" hostname="DESKTOP-JAPMI21" time="0.012">
+  <properties/>
+  <testcase name="testRestaurant" classname="inheritance.RestaurantTest" time="0.012"/>
+  <system-out><![CDATA[Stars should be between 0 - 5 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

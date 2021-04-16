@@ -86,6 +86,7 @@ public class Library {
       return unseenTemp;
     }
 public static HashMap<String, Integer> tally(List<String> data){
+       Integer numberOfVotes=1;
     HashMap<String, Integer> votes= new HashMap<String, Integer>();
     for(String item :data){
         if(votes.containsKey(item)){
@@ -96,7 +97,5 @@ public static HashMap<String, Integer> tally(List<String> data){
             votes.put(item,1);
         }
     }
-    System.out.println(votes);
-    return votes;
 }
 }
