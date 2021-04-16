@@ -22,6 +22,7 @@
 
 ## 4. lowest average Method : a method that takes a matrix (array of arrays ) and calculate the avarege for each array and return the array of the lowest averege .
 
+
 # lab 3 Maps and FileIO
 
 ## Basic Library
@@ -31,3 +32,4 @@
 ## 2.tally : a method that takes a List of strings contains votes and return the value that have to biggest number of votes 
 
 ## 3.Linter : a method that takes a string (a path for a javascript file) and read the file and return an error in every line that doesnt end with semi colon . 
+
