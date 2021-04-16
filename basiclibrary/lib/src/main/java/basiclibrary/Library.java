@@ -85,18 +85,24 @@ public class Library {
       }
       return unseenTemp;
     }
-public static HashMap<String, Integer> tally(List<String> data){
+public static String tally(List<String> data){
+       Integer numberOfVotes=1;
+       String winner="";
     HashMap<String, Integer> votes= new HashMap<String, Integer>();
     for(String item :data){
         if(votes.containsKey(item)){
             votes.put(item, votes.get(item)+1);
-            System.out.println(item);
         }
         else{
             votes.put(item,1);
         }
     }
-    System.out.println(votes);
-    return votes;
+    for(String item :data){
+       if(votes.get(item)>numberOfVotes){
+           numberOfVotes=votes.get(item);
+           winner=item;
+       }
+    }
+    return winner;
 }
 }

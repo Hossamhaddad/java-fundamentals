@@ -14,7 +14,17 @@ public class App {
 
     public static void main(String[] args) {
         String path="resources/gates.js";
-        linter(path);
+        String path1="resources/oneError.js";
+        String path2="resources/noerror.js";
+        String path3="resources/empty.js";
+        System.out.println("many errors ");
+  linter(path);
+        System.out.println("one error ");
+        linter(path1);
+        System.out.println("no error");
+        linter(path2);
+        System.out.println("empty");
+        linter(path3);
     }
 
     public static void linter(String filePath) {
