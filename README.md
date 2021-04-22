@@ -33,3 +33,4 @@
 
 ## 3.Linter : a method that takes a string (a path for a javascript file) and read the file and return an error in every line that doesnt end with semi colon . 
 
+
