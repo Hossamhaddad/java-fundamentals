@@ -1,33 +1,10 @@
 package inheritance;
 
 public class Review {
-   String body;
-   String author;
-   int starsRate;
+   public String body;
+   public String author;
+   public int starsRate;
 
-    public String getBody() {
-        return body;
-    }
-
-    public int getStarsRate() {
-        return starsRate;
-    }
-
-    public void setStarsRate(int starsRate) {
-        this.starsRate = starsRate;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public void setBody(String body) {
-        this.body = body;
-    }
 
     public  Review(){
 
